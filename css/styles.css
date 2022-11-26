@@ -752,6 +752,8 @@ footer .container {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 28px;
+  padding-right: 10px;
+  border: none;
 }
 
 /*-----------------Модальне вiкнo-----------*/
