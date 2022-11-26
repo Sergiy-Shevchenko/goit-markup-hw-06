@@ -428,7 +428,7 @@
             <input class="input-footer" type="e-mail" placeholder="E-mail"/>
           </form>
           <button class="button-footer" type="button">Підписатися
-            <svg width="24" height="24">
+            <svg class="footer-icon-telegram" width="24" height="24">
               <use href="./images/icon.svg#icon-Telegram-1"></use>
             </svg>
           </button>
@@ -439,10 +439,44 @@
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="closed">
-          <svg width="15" height="15">
+          <svg class="closed-icon" width="30" height="30">
             <use href="./images/icon.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <label class="lable-input">Ім'я
+            <span class="input-wrapper"> 
+          <input type="user-name" class="modal-input"/>
+          <svg class="icon-modal" width="12" height="12">
+            <use href="./images/icon.svg#icon-Name-1" ></use>
+          </svg>
+          </span>
+          </label>
+          <label class="lable-input">Телефон
+          <span class="input-wrapper">
+          <input type="user-tell" class="modal-input"/>
+          <svg class="icon-modal" width="13" height="13">
+            <use href="./images/icon.svg#icon-Tell-2" ></use>
+          </svg>
+        </span>
+          </label>
+          <label class="lable-input">Пошта
+          <span class="input-wrapper">
+          <input type="user-email" class="modal-input"/>
+          <svg class="icon-modal" width="15" height="12">
+            <use href="./images/icon.svg#icon-e-mail-1" ></use>
+          </svg>
+          </span>
+          </label>
+          <label class="lable-input">Коментар
+            <textarea name="user-text" class="modal-coment" placeholder="Введіть текст"></textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="consent" value="conditions" checked />Погоджуюся з розсилкою та приймаю Умови договору
+          </label>
+          <button class="botton-modal" type="submit">Відправити</button>
+      </form>
       </div>
     </div>
     <script src="./modal.js"></script>
