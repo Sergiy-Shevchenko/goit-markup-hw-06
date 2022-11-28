@@ -892,7 +892,6 @@ border-radius: 4px;
   
 }
 
-
 /*------------------Кнопка-"Закрити"-----------*/
 .closed {
   position: absolute;
@@ -904,7 +903,7 @@ border-radius: 4px;
   display: flex;
   align-items: center;
   text-align: center;
-  outline: 2px solid #2f303a;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
   margin-top: 8px;
   margin-right: 8px;
@@ -913,35 +912,33 @@ border-radius: 4px;
   
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.closed:hover {
+/*---ховер-фокус-рамки-кнопки-*/
+/*.closed:hover {
   outline: 2px solid #2196f3;
-}
-
-.closed:hover + .closed-icon {
-  fill:#2196F3
-}
+}*/
 
 .closed:focus {
   outline: 2px solid #2196f3;
 }
 
+/*---iконка-кноппки-(хрестик)--*/
 .closed-icon {
+  display: flex;
   background: #ffffff;
   fill: #2f303a;
    border-radius: 50%;
-
+   
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/*---ховер-iконки*/
+
 .closed-icon:hover {
 fill: #2196F3;
 }
-
-.closed-icon:focus {
-  fill: #2196F3;
+.closed:hover + .closed-icon {
+  fill:#2196F3;
 }
-
-
 
 
 /*---чек-прапорець-текст---*/
@@ -951,11 +948,12 @@ fill: #2196F3;
 margin-bottom: 30px;
 }
 
-
 .check-text span {
 display: flex;
-align-items: center;
-/*justify-content: center;*/
+/*align-items: center;*/
+width: 16px;
+height: 15px;
+justify-content: center;
 fill: transparent;
 font-family: 'Roboto';
 font-style: normal;
@@ -965,31 +963,58 @@ line-height: 1.7142;
 letter-spacing: 0.03em;
 color: #757575;
 padding: 0;
-
 }
+.check-text {
+  display: flex;
+  position: relative;
+}
+
+
 /*---чек-галочка---*/
 .check-icon {  
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 15px;
+  /*width: 100%;
+  height: 100%;*/
   border: 2px solid #212121;
   border-radius: 2px;
-  margin-right: 7px;
+  
   
 }
 
+.checkbox {
+  margin-right: 7px;
+ }
+
 .modal-check:checked + .check-text span {
   background-color: #2196F3;
-  border: none;
+  border: transparent;
   fill: var(--background-color);
+  
 }
 
 .polisy-link {
   color: #2196f3;
-  text-decoration: underline;
+  padding-left: 4px;
+ }
+
+.polisy-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 2px;
+  right: 10px;
+  width: 122px;
+  height: 1px;
+  background-color: #2196f3;
+  border-radius: 2px;
 }
+
+
+
+
+
 
 /*---кнопка-модального-вiкна---*/
 .botton-modal {
