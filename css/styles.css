@@ -837,6 +837,7 @@ margin-top: 12px;
 
 /*---вiкно-форми---*/
 .modal-input {
+  /*display: flex;*/
   width:100%;
   height:40px;
   cursor: pointer;
@@ -844,7 +845,9 @@ margin-top: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
 border-radius: 4px;
-padding-left: 42px;
+padding-left: 36px;
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -869,6 +872,8 @@ border-radius: 4px;
 border-radius: 4px;
 resize: none;
 padding: 16px 12px;
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .modal-coment:hover,
@@ -884,7 +889,9 @@ border-radius: 4px;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  
 }
+
 
 /*------------------Кнопка-"Закрити"-----------*/
 .closed {
@@ -897,26 +904,59 @@ border-radius: 4px;
   display: flex;
   align-items: center;
   text-align: center;
-  outline: transparent;
+  outline: 2px solid #2f303a;
   background: #ffffff;
   margin-top: 8px;
   margin-right: 8px;
-  fill: #2f303a;
-  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);*/
   border-radius: 50%;
   border: none;
-}
-
-.closed:hover + .closed-icon,
-.closed:focus + .closed-icon {
-  fill: var(--text-active-color);
   
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.closed:hover {
+  outline: 2px solid #2196f3;
+}
+
+.closed:hover + .closed-icon {
+  fill:#2196F3
+}
+
+.closed:focus {
+  outline: 2px solid #2196f3;
+}
+
+.closed-icon {
+  background: #ffffff;
+  fill: #2f303a;
+   border-radius: 50%;
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.closed-icon:hover {
+fill: #2196F3;
+}
+
+.closed-icon:focus {
+  fill: #2196F3;
 }
 
 
-/*---чек-прапорець-текст-*/
+
+
+/*---чек-прапорець-текст---*/
+
 .check {
+    margin-top: 20px;
+margin-bottom: 30px;
+}
+
+
+.check-text span {
+display: flex;
+align-items: center;
+/*justify-content: center;*/
+fill: transparent;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -924,11 +964,32 @@ font-size: 14px;
 line-height: 1.7142;
 letter-spacing: 0.03em;
 color: #757575;
-margin-top: 20px;
-margin-bottom: 30px;
+padding: 0;
+
+}
+/*---чек-галочка---*/
+.check-icon {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+  
 }
 
+.modal-check:checked + .check-text span {
+  background-color: #2196F3;
+  border: none;
+  fill: var(--background-color);
+}
 
+.polisy-link {
+  color: #2196f3;
+  text-decoration: underline;
+}
 
 /*---кнопка-модального-вiкна---*/
 .botton-modal {
