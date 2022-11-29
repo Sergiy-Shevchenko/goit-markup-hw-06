@@ -23,7 +23,7 @@
           <a class="text-web-header" href="#"
             >Web<span style="color: #212121">Studio</span></a
           >
-      <!------------------------------Навiгацiя-------------------------->
+          <!------------------------------Навiгацiя-------------------------->
           <ul class="hefder-list-site">
             <li class="item">
               <a class="header-link current" href="./index.html">Студiя</a>
@@ -425,15 +425,21 @@
         <div class="link-social-connect">
           <p class="foot-soc">Підпишіться на розсилку</p>
           <span class="foot-form">
-          <form>
-            <input class="input-footer" name="e-mail" type="e-mail" placeholder="E-mail"/>
-          </form>
-          <button class="button-footer" type="button">Підписатися
-            <svg class="footer-icon-telegram" width="24" height="24">
-              <use href="./images/icon.svg#icon-Telegram-1"></use>
-            </svg>
-          </button>
-          <span>
+            <form>
+              <input
+                class="input-footer"
+                name="e-mail"
+                type="e-mail"
+                placeholder="E-mail"
+              />
+            </form>
+            <button class="button-footer" type="button">
+              Підписатися
+              <svg class="footer-icon-telegram" width="24" height="24">
+                <use href="./images/icon.svg#icon-Telegram-1"></use>
+              </svg>
+            </button>
+          </span>
         </div>
       </div>
     </footer>
@@ -446,48 +452,61 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-          <label class="lable-input">Ім'я
-            <span class="input-wrapper"> 
-          <input type="user-name" name="user" class="modal-input"/>
-          <svg class="icon-modal" width="12" height="12">
-            <use href="./images/icon.svg#icon-Name-1" ></use>
-          </svg>         
-          </span>
-          </label>
-          <label class="lable-input">Телефон
-          <span class="input-wrapper">
-          <input type="user-tell" name="tell" class="modal-input"/>
-          <svg class="icon-modal" width="13" height="13">
-            <use href="./images/icon.svg#icon-Tell-2" ></use>
-          </svg>
-        </span>
-          </label>
-          <label class="lable-input">Пошта
-          <span class="input-wrapper">
-          <input type="user-email" name="e-mail" class="modal-input"/>
-          <svg class="icon-modal" width="15" height="12">
-            <use href="./images/icon.svg#icon-e-mail-1" ></use>
-          </svg>
-          </span>
-          </label>
-          <label class="lable-input">Коментар
-            <textarea name="user-text" class="modal-coment" placeholder="Введіть текст"></textarea>
-          </label>
-          <div class="check">
-          <input type="checkbox" name="polisy" class="modal-check visually-hidden" id="polisy"/>
-          <label class="check-text" for="polisy">
-            <span class="checkbox">
-              <svg class="check-icon" width="16" height="15">
-                <use href="./images/icon.svg#icon-check" ></use>
+          <label class="lable-input"
+            >Ім'я
+            <span class="input-wrapper">
+              <input type="user-name" name="user" class="modal-input" />
+              <svg class="icon-modal" width="12" height="12">
+                <use href="./images/icon.svg#icon-Name-1"></use>
               </svg>
             </span>
-            Погоджуюся з розсилкою та приймаю 
-            <a class="polisy-link" href="">Умови договору</a></label>
-                       
+          </label>
+          <label class="lable-input"
+            >Телефон
+            <span class="input-wrapper">
+              <input type="user-tell" name="tell" class="modal-input" />
+              <svg class="icon-modal" width="13" height="13">
+                <use href="./images/icon.svg#icon-Tell-2"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="lable-input"
+            >Пошта
+            <span class="input-wrapper">
+              <input type="user-email" name="e-mail" class="modal-input" />
+              <svg class="icon-modal" width="15" height="12">
+                <use href="./images/icon.svg#icon-e-mail-1"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="lable-input"
+            >Коментар
+            <textarea
+              name="user-text"
+              class="modal-coment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="polisy"
+              class="modal-check visually-hidden"
+              id="polisy"
+            />
+            <label class="check-text" for="polisy">
+              <span class="checkbox">
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/icon.svg#icon-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю
+              <a class="polisy-link" href="">Умови договору</a></label
+            >
           </div>
-                     
+
           <button class="botton-modal" type="submit">Відправити</button>
-      </form>
+        </form>
       </div>
     </div>
     <script src="./modal.js"></script>

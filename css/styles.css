@@ -806,29 +806,28 @@ footer .container {
 
 /*---Заголовок-модального-вiкна---*/
 .modal-title {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-    color: #212121;
-
+  color: #212121;
 }
 
 /*---назва-поля---*/
 .lable-input {
   position: relative;
   display: block;
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: #757575;
-margin-top: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-top: 12px;
 }
 
 .input-wrapper {
@@ -838,49 +837,49 @@ margin-top: 12px;
 /*---вiкно-форми---*/
 .modal-input {
   /*display: flex;*/
-  width:100%;
-  height:40px;
+  width: 100%;
+  height: 40px;
   cursor: pointer;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
-border-radius: 4px;
-padding-left: 36px;
+  border-radius: 4px;
+  padding-left: 36px;
 
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
 .modal-input:focus {
   border-color: var(--text-active-color);
-  border: 1px solid #2196F3;
-border-radius: 4px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 .modal-input:hover + .icon-modal,
 .modal-input:focus + .icon-modal {
-  fill: var(--text-active-color)
+  fill: var(--text-active-color);
 }
 /*---форма-коментарю---*/
 .modal-coment {
-  width:100%;
-  height:120px;
+  width: 100%;
+  height: 120px;
   cursor: pointer;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
-border-radius: 4px;
-resize: none;
-padding: 16px 12px;
+  border-radius: 4px;
+  resize: none;
+  padding: 16px 12px;
 
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-coment:hover,
 .modal-coment:focus {
   border-color: var(--text-active-color);
-  border: 1px solid #2196F3;
-border-radius: 4px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 /*---iконка-форми-модального-вiкна---*/
@@ -889,7 +888,6 @@ border-radius: 4px;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  
 }
 
 /*------------------Кнопка-"Закрити"-----------*/
@@ -903,13 +901,14 @@ border-radius: 4px;
   display: flex;
   align-items: center;
   text-align: center;
+  cursor: pointer;
   outline: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
   margin-top: 8px;
   margin-right: 8px;
   border-radius: 50%;
   border: none;
-  
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*---ховер-фокус-рамки-кнопки-*/
@@ -926,78 +925,82 @@ border-radius: 4px;
   display: flex;
   background: #ffffff;
   fill: #2f303a;
-   border-radius: 50%;
-   
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*---ховер-iконки*/
 
 .closed-icon:hover {
-fill: #2196F3;
+  fill: #2196f3;
 }
 .closed:hover + .closed-icon {
-  fill:#2196F3;
+  fill: #2196f3;
 }
-
 
 /*---чек-прапорець-текст---*/
 
 .check {
-    margin-top: 20px;
-margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .check-text span {
-display: flex;
-/*align-items: center;*/
-width: 16px;
-height: 15px;
-justify-content: center;
-fill: transparent;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.7142;
-letter-spacing: 0.03em;
-color: #757575;
-padding: 0;
+  /*display: flex;*/
+  /*align-items: center;*/
+  width: 16px;
+  height: 15px;
+  justify-content: center;
+  fill: transparent;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: #757575;
+  padding: 0;
+  border: 1px solid #212121;
+  border-radius: 2px;
 }
+
 .check-text {
   display: flex;
   position: relative;
 }
 
-
 /*---чек-галочка---*/
-.check-icon {  
+.check-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   /*width: 100%;
   height: 100%;*/
-  border: 2px solid #212121;
-  border-radius: 2px;
-  
-  
 }
 
 .checkbox {
   margin-right: 7px;
- }
+}
+
+.checkbox:hover {
+  border: 1px solid #2196f3;
+}
 
 .modal-check:checked + .check-text span {
-  background-color: #2196F3;
-  border: transparent;
+  background-color: #2196f3;
+  border: #2196f3;
+  /*border: none;*/
   fill: var(--background-color);
-  
 }
 
 .polisy-link {
   color: #2196f3;
   padding-left: 4px;
- }
+  padding-bottom: 2px;
+  text-decoration: none;
+}
 
 .polisy-link::after {
   content: "";
@@ -1006,31 +1009,31 @@ padding: 0;
   bottom: 2px;
   right: 10px;
   width: 122px;
-  height: 1px;
+  height: 2px;
   background-color: #2196f3;
   border-radius: 2px;
 }
 
 /*---кнопка-модального-вiкна---*/
 .botton-modal {
- font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-cursor: pointer;
-color: #FFFFFF;
-background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
-padding: 10px 52px;
-margin-left: auto;
-margin-right: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 52px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*--------------hover/focus------------*/
 
