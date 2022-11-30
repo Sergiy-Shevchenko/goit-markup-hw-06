@@ -424,22 +424,20 @@
         </div>
         <div class="link-social-connect">
           <p class="foot-soc">Підпишіться на розсилку</p>
-          <span class="foot-form">
-            <form>
-              <input
-                class="input-footer"
-                name="e-mail"
-                type="e-mail"
-                placeholder="E-mail"
-              />
-            </form>
-            <button class="button-footer" type="button">
+          <form class="foot-form">
+            <input
+              class="input-footer"
+              name="e-mail"
+              type="e-mail"
+              placeholder="E-mail"
+            />
+            <button class="button-footer" type="submit">
               Підписатися
               <svg class="footer-icon-telegram" width="24" height="24">
                 <use href="./images/icon.svg#icon-Telegram-1"></use>
               </svg>
             </button>
-          </span>
+          </form>
         </div>
       </div>
     </footer>
@@ -454,30 +452,45 @@
         <form class="modal-form">
           <label class="lable-input"
             >Ім'я
-            <span class="input-wrapper">
-              <input type="user-name" name="user" class="modal-input" />
+            <div class="input-wrapper">
+              <input
+                type="user-name"
+                name="user"
+                class="modal-input"
+                required
+              />
               <svg class="icon-modal" width="12" height="12">
                 <use href="./images/icon.svg#icon-Name-1"></use>
               </svg>
-            </span>
+            </div>
           </label>
           <label class="lable-input"
             >Телефон
-            <span class="input-wrapper">
-              <input type="user-tell" name="tell" class="modal-input" />
+            <div class="input-wrapper">
+              <input
+                type="user-tell"
+                name="tell"
+                class="modal-input"
+                required
+              />
               <svg class="icon-modal" width="13" height="13">
                 <use href="./images/icon.svg#icon-Tell-2"></use>
               </svg>
-            </span>
+            </div>
           </label>
           <label class="lable-input"
             >Пошта
-            <span class="input-wrapper">
-              <input type="user-email" name="e-mail" class="modal-input" />
+            <div class="input-wrapper">
+              <input
+                type="user-email"
+                name="e-mail"
+                class="modal-input"
+                required
+              />
               <svg class="icon-modal" width="15" height="12">
                 <use href="./images/icon.svg#icon-e-mail-1"></use>
               </svg>
-            </span>
+            </div>
           </label>
           <label class="lable-input"
             >Коментар
@@ -493,18 +506,18 @@
               name="polisy"
               class="modal-check visually-hidden"
               id="polisy"
+              required
             />
             <label class="check-text" for="polisy">
-              <span class="checkbox">
+              <div class="checkbox">
                 <svg class="check-icon" width="16" height="15">
                   <use href="./images/icon.svg#icon-check"></use>
                 </svg>
-              </span>
+              </div>
               Погоджуюся з розсилкою та приймаю
               <a class="polisy-link" href="">Умови договору</a></label
             >
           </div>
-
           <button class="botton-modal" type="submit">Відправити</button>
         </form>
       </div>
