@@ -743,6 +743,7 @@ footer .container {
   display: flex;
   align-items: center;
   text-align: center;
+  cursor: pointer;
   letter-spacing: 0.06em;
   color: var(--background-color);
   background: var(--text-active-color);
